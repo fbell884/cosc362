@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\author{Francis Bell}
+\title{COSC 362 Git Assignment 1}
+
+\begin{document}
+\maketitle
+
+To start off this assignment, I first created a repository on GitHub titled "cosc362."
+
+On my personal linux machine, I used the git command: 
+
+	git clone https://github.com/fbell884/cosc362.git
+
+This then brought a folder into my git repository. I went into savage and did the same thing.
+
+I then switched back to my personal machine and created a LaTeX document as a test (text1.tex). 
+	
+	vim test1.tex
+
+	*editing file*
+
+	pdflatex test1.tex
+
+Next, I used git commands to add, commit and push my changes to the remore repository:
+
+	git add test1.pdf
+	
+	git commit -m "Test Commit" 
+
+	git push origin master
+
+After this, I verified on GitHub that the file was there. Now I went back into savage to pull the changes: 
+
+	cd cosc362
+
+	git pull origin master
+
+The "test1.pdf" file was now on the savage server in the local git repository. 
+
+Now that I verified that this works, I have created a new LaTeX document to document my process. I am currently editing this and then I will repeat the steps above to pull this document from savage onto my personal linux machine:
+
+	vim gitassignment1.tex
+
+	*editing file*
+
+	pdflatex gitassignment1.tex
+
+	git add gitassignment1.pdf
+
+	git commit -m "Committing First Git Assignment"
+
+	git push origin master
+
+*Switching back to Personal Machine*
+
+	cd cosc362
+
+	git pull origin master
+
+Now the file for the assignment that I am working on right now in savage, is now pulled on to my personal machine.
+
+
+
+
+ 		
