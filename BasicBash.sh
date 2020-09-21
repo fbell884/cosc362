@@ -7,6 +7,6 @@ for name in $names
 do 
 echo $name
 done
-echo "Done"
+echo done
 
 
