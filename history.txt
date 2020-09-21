@@ -1,0 +1,31 @@
+    1  history
+    2  ls
+    3  cd cosc362
+    4  cd
+    5  history
+    6  cd cosc362
+    7  vim UserHistory.sh
+    8  ls
+    9  history > history.txt
+   10  cat history.txt
+   11  date >> history.txt
+   12  cat history.txt
+   13  vim UserHistory.sh
+   14  ls
+   15  chmod 777 UserHistory.sh
+   16  ./UserHistory.sh
+   17  cat history.txt
+   18  cd
+   19  ssh bell@savage.nsm.iup.edu
+   20  ls 
+   21  cd cosc362
+   22  ls
+   23  git status
+   24  ./UserHistory.sh
+   25  cat history.txt
+   26  vim UserHistory.sh
+   27  ./UserHistory.sh
+   28  vim UserHistory.sh
+   29  ./UserHistory.sh
+Script Ran: 
+Mon Sep 21 16:52:19 EDT 2020
