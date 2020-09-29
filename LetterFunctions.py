@@ -51,9 +51,9 @@ class DocumentText:
 		
 		# More to come
 				
-		LetterFile.write("self.MyAddress")
-		LetterFile.write("self.toAddress")
-		LetterFile.write("self.date")
+		LetterFile.write(self.MyAddress)
+		LetterFile.write(self.toAddress)
+		LetterFile.write(self.date)
 	
 		LetterFile.write(self.footer)
 		LetterFile.close()
