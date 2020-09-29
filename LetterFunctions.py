@@ -42,6 +42,14 @@ class DocumentText:
 
 		self.date = "\\vskip.5in \n \\today \n\n \\vskip.5in \n\n"
 
+		self.greeting = "Dear " + self.address.First + " " + self.address.Last + ", \n\n"
+                  
+		self.body = ("Thank you for all you do as a magical being. "
+				+ " You keep things fun and light in my computer science class!"
+				+ " Looking Forward to our next interaction\n\n")
+
+		self.salutation = "\\hskip3in Chase Geis\n"
+
 		self.footer = "\\end{document} \n"
 
 	def WriteLetter(self):
@@ -54,6 +62,10 @@ class DocumentText:
 		LetterFile.write(self.MyAddress)
 		LetterFile.write(self.toAddress)
 		LetterFile.write(self.date)
-	
+		
+		LetterFile.write(self.greeting)
+		LetterFile.write(self.body)		
+		LetterFile.write(self.salutation)
+
 		LetterFile.write(self.footer)
 		LetterFile.close()
