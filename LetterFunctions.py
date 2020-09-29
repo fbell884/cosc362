@@ -31,9 +31,16 @@ class DocumentText:
 
 		self.header = ("\\documentclass[12pt]{article} \n" 
 			+ "\\usepackage{geometry} \n" 
-		#	+ "\\geometry{hmargin={1in,1in}, vmargin{2in,1in}}\n" 
+			+ "\\geometry{hmargin={1in,1in}, vmargin={2in,1in}}\n" 
 			+ "\\begin{document}\n\n")
-		# More to come		
+		
+		self.MyAddress = "10 South 10th Street\n\n \\vskip.5in \n\n"
+
+		self.toAddress = (self.address.First + " " + self.address.Last + "\n\n"
+				+ self.address.ADLine1 + "\n\n" 
+				+ self.address.ADLine2 + "\n\n")
+
+		self.date = "\\vskip.5in \n \\today \n\n \\vskip.5in \n\n"
 
 		self.footer = "\\end{document} \n"
 
@@ -41,10 +48,12 @@ class DocumentText:
 		LetterOutName = str(self.address.Last.lstrip(' '))+".tex"
 		LetterFile = open(LetterOutName, "w")
 		LetterFile.write(self.header)
-
+		
 		# More to come
 				
-		LetterFile.write("AHHHHHH\n\n")
+		LetterFile.write("self.MyAddress")
+		LetterFile.write("self.toAddress")
+		LetterFile.write("self.date")
 	
 		LetterFile.write(self.footer)
 		LetterFile.close()
