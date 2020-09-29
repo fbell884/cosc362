@@ -25,3 +25,26 @@ class Address:
 		print (self.ADLine1, "\n", self.ADLine2)
 
 
+class DocumentText:
+	def __init__(self,address):
+		self.address = address
+
+		self.header = ("\\documentclass[12pt]{article} \n" 
+			+ "\\usepackage{geometry} \n" 
+		#	+ "\\geometry{hmargin={1in,1in}, vmargin{2in,1in}}\n" 
+			+ "\\begin{document}\n\n")
+		# More to come		
+
+		self.footer = "\\end{document} \n"
+
+	def WriteLetter(self):
+		LetterOutName = str(self.address.Last.lstrip(' '))+".tex"
+		LetterFile = open(LetterOutName, "w")
+		LetterFile.write(self.header)
+
+		# More to come
+				
+		LetterFile.write("AHHHHHH\n\n")
+	
+		LetterFile.write(self.footer)
+		LetterFile.close()
