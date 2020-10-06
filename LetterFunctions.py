@@ -34,19 +34,19 @@ class DocumentText:
 			+ "\\geometry{hmargin={1in,1in}, vmargin={2in,1in}}\n" 
 			+ "\\begin{document}\n\n")
 		
-		self.MyAddress = "10 South 10th Street\n\n \\vskip.5in \n\n"
+		self.MyAddress = "\\noindent 10 South 10th Street\n\n \\vskip.5in \n\n"
 
-		self.toAddress = (self.address.First + " " + self.address.Last + "\n\n"
-				+ self.address.ADLine1 + "\n\n" 
-				+ self.address.ADLine2 + "\n\n")
+		self.toAddress = ("\\noindent " + self.address.First + " " + self.address.Last + "\n\n"
+				+ "\\noindent " + self.address.ADLine1 + "\n\n" 
+				+ "\\noindent " + self.address.ADLine2 + "\n\n")
 
-		self.date = "\\vskip.5in \n \\today \n\n \\vskip.5in \n\n"
+		self.date = "\\vskip.5in \n \\noindent \\today \n\n \\vskip.5in \n\n"
 
-		self.greeting = "Dear " + self.address.First + " " + self.address.Last + ", \n\n"
+		self.greeting = "Dear " + self.address.First + " " + self.address.Last + ", \n\n \\vskip.5in"
                   
 		self.body = ("Thank you for all you do as a magical being. "
 				+ " You keep things fun and light in my computer science class!"
-				+ " Looking Forward to our next interaction\n\n")
+				+ " Looking Forward to our next interaction\n\n \\vskip1in")
 
 		self.salutation = "\\hskip3in Chase Geis\n"
 
