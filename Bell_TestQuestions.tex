@@ -1,0 +1,80 @@
+%\documentclass[12pt,cancelspace]{exam}
+\documentclass[12pt,answers]{exam}
+\usepackage{color,geometry}
+\usepackage{verbatim}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\geometry{hmargin={1in,1in},vmargin={1in,1in}}
+\begin{document}
+
+\section*{Multiple Choice:}
+\begin{questions}
+%%%%% Question 1:
+\question What does the "history" command do in Linux?
+\begin{description}
+\item[A.] Possible Answer \verb' It shows all of the previous users who have logged into a Linux server'
+\item[B.] Possible Answer \verb' It shows all of the previous commands by a user.'
+\item[C.] Possible Answer \verb' It shows all of the user's internet browser history'   
+\item[D.] Possible Answer \verb' It gives a synopsis of the history of the united states'     
+%answer: B     
+\end{description}
+\begin{solution}
+(Answer B): The history commands gives a list of the previous commands by the user. The user can clear this.  
+\end{solution}
+
+%%%%% Question 2:
+\question Which of the following is not a proper Git command?
+\begin{description}
+\item[A.] Possible Answer \verb' git status'
+\item[B.] Possible Answer \verb' git push origin master'
+\item[C.] Possible Answer \verb' git commit "This is my commit message"'    
+\item[D.] Possible Answer \verb' git add .'     
+%answer: C  
+\end{description}
+\begin{solution}
+(Answer C): When committing files using Git, you need to use "-m" for the message. I.e., git commit -m "This is my commit message" .  
+\end{solution}
+
+%%%%% Question 3:
+\question Which two commands are used to transfer files between two machines using sftp?
+\begin{description}
+\item[A.] Possible Answer \verb' get & post'
+\item[B.] Possible Answer \verb' move & pull'
+\item[C.] Possible Answer \verb' move & post'   
+\item[D.] Possible Answer \verb' get & put'     
+%answer: D     
+\end{description}
+\begin{solution}
+(Answer D): The "get" command copies a file from the remote host to the local machine. The "put" command copies a file from the local machine and puts it on the remote file system.  
+\end{solution}
+
+%%%%% Question 4:
+\question What is the proper way to begin bash script?
+\begin{description}
+\item[A.] Possible Answer \verb' pound bang slash bin slash bash'
+\item[B.] Possible Answer \verb' bang bin slash bang slash bash'
+\item[C.] Possible Answer \verb' bash pound slash bin slash bash'   
+\item[D.] Possible Answer \verb' bin slash bang slash bash'     
+%answer: A     
+\end{description}
+\begin{solution}
+(Answer A): "pound bang slash bin slash bash" is the spelling out of "#!/bin/bash" which is how you should begin every bash script.  
+\end{solution}
+
+\end{questions}
+\section*{Short Answer}
+Give an example of how to make a short LaTeX document. 
+\begin{solution}
+
+"\documentclass[12pt]{article}
+\author{Francis Bell}
+\title{LaTeX Example}
+\begin{document}
+\maketitle
+
+This is how you make a .tex document.
+
+\end{document}"
+
+\end{solution}
+\end{document}
